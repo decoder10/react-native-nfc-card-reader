@@ -46,7 +46,7 @@ public class NfcCardReaderModule extends ReactContextBaseJavaModule implements A
 	}
 
     public void onActivityResult(Activity activity, int requestCode, int resultCode, Intent intent) {
-       if(intent!=null && intent.hasExtra("cardNumber") && intent.hasExtra("expiryDate") && intent.hasExtra("cardType")){
+       if(true || intent!=null && intent.hasExtra("cardNumber") && intent.hasExtra("expiryDate") && intent.hasExtra("cardType")){
             if (requestCode==INTENT && activity.RESULT_OK==resultCode) {
                         WritableMap NfcCardDetails = Arguments.createMap();
                         String cardNumber = intent.getExtras().getString("cardNumber");
