@@ -33,7 +33,7 @@ buildscript {
             jcenter()
         }
         dependencies {
-            classpath 'com.android.tools.build:gradle:3.4.1'            
+            classpath 'com.android.tools.build:gradle:3.4.1'
         }
     }
 }
@@ -149,10 +149,10 @@ afterEvaluate { project ->
     }
 }
     dependencies {
-	        implementation ('com.github.pro100svitlo:creditCardNfcReader:1.0.3'){
+	        implementation ('com.github.decoder10:Credit-Card-NFC-Reader:v1.1.2'){
                     exclude module: 'bolts-android'
 
             }
                  implementation 'com.android.support:multidex:1.0.0'
     }
-       
+
