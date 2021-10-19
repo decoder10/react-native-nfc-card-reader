@@ -156,3 +156,8 @@ afterEvaluate { project ->
                  implementation 'com.android.support:multidex:1.0.0'
     }
 
+allprojects {
+		repositories {
+			maven { url 'https://www.jitpack.io' }
+		}
+	}
